@@ -6,19 +6,25 @@
   "author": "kalebesampaio <kalebesmp2002@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "typeorm": "typeorm-ts-node-commonjs",
     "dev": "ts-node-dev --ignore-watch node_modules --cls --rs src/server.ts"
   },
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.0",
     "pg": "^8.11.0",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.3.17",
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
     "@types/express": "^4.17.17",
-    "@types/node": "^20.3.1",
+    "@types/jsonwebtoken": "^9.0.2",
     "ts-node-dev": "^2.0.0",
     "typescript": "^5.1.3"
   }
