@@ -1,0 +1,25 @@
+{
+  "name": "motors_shop_backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:kalebesampaio/motors_shop_backend.git",
+  "author": "kalebesampaio <kalebesmp2002@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --ignore-watch node_modules --cls --rs src/server.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "pg": "^8.11.0",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.17",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.3.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.3"
+  }
+}
