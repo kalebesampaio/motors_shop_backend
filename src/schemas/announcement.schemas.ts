@@ -4,12 +4,12 @@ import { commentSchema } from "./comment.schemas";
 
 const annoucementSchema = z.object({
   id: z.number().positive(),
-  model: z.string().max(60),
+  model: z.string().max(150),
   type: z.string().max(150),
   description: z.string(),
-  km: z.number().positive(),
+  km: z.number(),
   year: z.number().positive(),
-  default_img: z.string().max(220),
+  default_img: z.string(),
   price: z.number().positive(),
   isActive: z.boolean().default(true),
   user: userReturnSchema,

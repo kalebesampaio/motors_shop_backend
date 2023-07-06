@@ -35,7 +35,9 @@ const read = async (admin: boolean): Promise<UserRead> => {
     const users: Array<User> = await userRepository.find({ withDeleted: true });
     return userReadSchema.parse(users);
   }
-  return userReadSchema.parse(await userRepository.find());
+  return userReadSchema.parse(
+    await userRepository.find({ relations: { address: true } })
+  );
 };
 
 const retrive = async (id: number): Promise<UserReturn> => {

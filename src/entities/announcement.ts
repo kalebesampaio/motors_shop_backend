@@ -28,7 +28,7 @@ export class Announcement {
   @Column()
   year: number;
 
-  @Column({ length: 220 })
+  @Column({ nullable: true })
   default_img: string;
 
   @Column("simple-array")

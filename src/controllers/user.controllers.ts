@@ -16,9 +16,7 @@ const read = async (req: Request, res: Response): Promise<Response> => {
 
 const retrive = async (req: Request, res: Response): Promise<Response> => {
   const id: number = Number(req.params.id);
-  console.log(id);
   const user: UserReturn = await userServices.retrive(id);
-  console.log(user);
   return res.status(200).json(user);
 };
 
