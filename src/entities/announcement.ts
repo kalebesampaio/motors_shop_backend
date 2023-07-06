@@ -5,8 +5,8 @@ import {
   OneToMany,
   PrimaryGeneratedColumn,
 } from "typeorm";
-import { User } from "./User.entity";
-import { Comment } from "./Comment.entity";
+import { User } from "./user.entity";
+import { Comment } from "./comment.entity";
 
 @Entity("announcements")
 export class Announcement {
