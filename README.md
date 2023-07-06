@@ -24,7 +24,7 @@ Visão geral do projeto, um pouco das tecnologias usadas.
 - [Zod](https://zod.dev/)
 
 A URL base da aplicação:
-http://localhost:3000/
+https://motors-shop-b4yd.onrender.com/
 
 ---
 
@@ -128,7 +128,7 @@ O objeto User é definido como:
 ### Exemplo de Request:
 ```
 POST /users
-Host: http://localhost:3000/
+Host: https://motors-shop-b4yd.onrender.com/
 Authorization: None
 Content-type: application/json
 ```
@@ -147,10 +147,10 @@ Content-type: application/json
         "admin": false,
         "address": {
          "cep": "string",
-					"state": "string",
-					"city": "string",
-					"number": "string",
-					"complement": "string"
+		"state": "string",
+		"city": "string",
+		"number": "string",
+		"complement": "string"
         }
     }
 ```
@@ -234,7 +234,7 @@ OBS.: Chaves não presentes no schema/no userSchema.omit serão removidas.
 ### Exemplo de Request:
 ```
 GET /users
-Host: http://localhost:3000/
+Host: https://motors-shop-b4yd.onrender.com/
 Authorization: Bearer token
 Content-type: application/json
 ```
@@ -311,7 +311,7 @@ Nenhum, o máximo que pode acontecer é retornar uma lista vazia.
 ### Exemplo de Request:
 ```
 GET /users/1
-Host: http://localhost:3000/
+Host: https://motors-shop-b4yd.onrender.com/
 Authorization: Bearer Token
 Content-type: application/json
 ```
@@ -371,7 +371,7 @@ Vazio
 ### Exemplo de Request:
 ```
 PATCH /users/1
-Host: http://localhost:3000/
+Host: https://motors-shop-b4yd.onrender.com/
 Authorization: Bearer Token
 Content-type: application/json
 ```
@@ -434,7 +434,7 @@ Content-type: application/json
 ### Exemplo de Request:
 ```
 PATCH /users/1
-Host: http://localhost:3000/
+Host: https://motors-shop-b4yd.onrender.com/
 Authorization: Bearer Token
 Content-type: application/json
 ```
