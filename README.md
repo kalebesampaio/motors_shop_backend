@@ -1,5 +1,3 @@
-# motors_shop_backend
-
 # Documentação da API
 
 ## Tabela de Conteúdos
