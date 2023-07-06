@@ -2,6 +2,7 @@
   "compilerOptions": {
     "target": "es2016",
     "module": "commonjs",
+    "moduleResolution": "node",
     "typeRoots": ["node_modules/@types"],
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -18,6 +19,6 @@
       "entities/*": ["src/entities/*"]
     }
   },
-  "include": ["src"],
+  "include": ["src/**/*.ts"],
   "exclude": ["node_modules"]
 }
