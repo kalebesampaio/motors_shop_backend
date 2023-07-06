@@ -5,8 +5,8 @@ import {
   CreateDateColumn,
   ManyToOne,
 } from "typeorm";
-import { User } from "../../src/entities/User.entity";
-import { Announcement } from "../../src/entities/Announcement";
+import { User } from "./User.entity";
+import { Announcement } from "./Announcement";
 
 @Entity("comments")
 export class Comment {

@@ -1,6 +1,6 @@
-import { User } from "../../src/entities/User.entity";
-import { Address } from "../../src/entities/Address.entity";
-import { Announcement } from "../../src/entities/Announcement";
-import { Comment } from "../../src/entities/Comment.entity";
+import { User } from "./User.entity";
+import { Address } from "./Address.entity";
+import { Announcement } from "./Announcement";
+import { Comment } from "./Comment.entity";
 
 export { User, Address, Comment, Announcement };
