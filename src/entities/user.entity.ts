@@ -45,8 +45,8 @@ export class User {
   @Column({ type: "date" })
   birthday: string;
 
-  @Column({ length: 8, select: false })
-  resetCode: String;
+  @Column({ length: 8, select: false, nullable: true })
+  resetCode: string;
 
   @Column({ length: 200 })
   descripition: string;

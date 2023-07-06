@@ -1,10 +1,11 @@
 import { z } from "zod";
-import { Repository } from "typeorm";
+import { DeepPartial, Repository } from "typeorm";
 import { Comment } from "../entities";
-import { commentCreateSchema } from "../schemas";
+import { commentCreateSchema, commentSchema } from "../schemas";
 
 type CommentCreate = z.infer<typeof commentCreateSchema>;
-
+type CommentUpdate = DeepPartial<Comment>;
+type CommentReturn = z.infer<typeof commentSchema>;
 type CommentRepo = Repository<Comment>;
 
-export { CommentCreate, CommentRepo };
+export { CommentCreate, CommentRepo, CommentUpdate, CommentReturn };

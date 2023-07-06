@@ -22,10 +22,10 @@ export class Announcement {
   @Column({ nullable: true })
   description: string;
 
-  @Column({ length: 60 })
+  @Column()
   km: number;
 
-  @Column({ length: 60 })
+  @Column()
   year: number;
 
   @Column({ length: 220 })

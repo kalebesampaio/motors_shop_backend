@@ -6,6 +6,8 @@ import { uniqueEmail } from "./uniqueEmail.middleware";
 import { validateBody } from "./validateBody.middleware";
 import { verifyToken } from "./verifyToken.middleware";
 import { uniqueCpf } from "./uniqueCpf.middleware";
+import { isOwner } from "./isOwner.middleware";
+import { commentOwner } from "./commentOwner.middleware";
 
 export default {
   handleError,
@@ -16,4 +18,6 @@ export default {
   isAdmin,
   isAdminOrOwner,
   uniqueCpf,
+  isOwner,
+  commentOwner,
 };

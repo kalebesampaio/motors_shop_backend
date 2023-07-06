@@ -1,19 +1,22 @@
 import { z } from "zod";
-import { userSchema } from "./user.schemas";
-import { annoucementSchema } from "./announcement";
+import { userAnnouncerReadSchema } from "./user.schemas";
 
 const commentSchema = z.object({
   id: z.number().positive(),
   text: z.string().max(200),
-  created_at: z.string().or(z.date()),
-  user: userSchema,
-  annoucement: annoucementSchema,
+  user: userAnnouncerReadSchema,
 });
 
-const commentCreateSchema = commentSchema.omit({
-  id: true,
-  user: true,
-  annoucement: true,
+const commentReadSchema = commentSchema.array();
+const commentCreateSchema = z.object({
+  text: z.string().max(200),
 });
 
-export { commentSchema, commentCreateSchema };
+const commentUpdateSchema = commentCreateSchema.partial();
+
+export {
+  commentSchema,
+  commentCreateSchema,
+  commentUpdateSchema,
+  commentReadSchema,
+};

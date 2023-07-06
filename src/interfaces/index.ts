@@ -1,5 +1,6 @@
 import {
   UserCreate,
+  UserCreate2,
   UserRead,
   UserReturn,
   UserUpdate,
@@ -16,8 +17,14 @@ import {
   AnnoucementReturn,
   AnnoucementRepo,
   AnnoucementRead,
+  AnnoucementUpdate,
 } from "./announcement.interfaces";
-
+import {
+  CommentUpdate,
+  CommentCreate,
+  CommentRepo,
+  CommentReturn,
+} from "./comment.interfaces";
 export {
   UserCreate,
   UserRead,
@@ -33,4 +40,10 @@ export {
   AnnoucementReturn,
   AnnoucementRepo,
   AnnoucementRead,
+  UserCreate2,
+  AnnoucementUpdate,
+  CommentUpdate,
+  CommentCreate,
+  CommentRepo,
+  CommentReturn,
 };
