@@ -13,7 +13,7 @@
     "emitDecoratorMetadata": true,
     "strictPropertyInitialization": false,
     "outDir": "./dist",
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
       "src/*": ["src/*"],
       "entities/*": ["src/entities/*"]
