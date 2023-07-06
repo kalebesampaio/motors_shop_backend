@@ -12,9 +12,9 @@ import {
   UpdateDateColumn,
 } from "typeorm";
 import { getRounds, hashSync } from "bcryptjs";
-import { Address } from "./Address.entity";
-import { Announcement } from "./Announcement";
-import { Comment } from "./Comment.entity";
+import { Address } from "../../src/entities/Address.entity";
+import { Announcement } from "../../src/entities/Announcement";
+import { Comment } from "../../src/entities/Comment.entity";
 
 @Entity("users")
 export class User {
