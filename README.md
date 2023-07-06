@@ -24,7 +24,7 @@ Visão geral do projeto, um pouco das tecnologias usadas.
 - [Zod](https://zod.dev/)
 
 A URL base da aplicação:
-``` url ```
+http://localhost:3000/
 
 ---
 
@@ -128,7 +128,7 @@ O objeto User é definido como:
 ### Exemplo de Request:
 ```
 POST /users
-Host: http://suaapi.com/v1
+Host: http://localhost:3000/
 Authorization: None
 Content-type: application/json
 ```
@@ -234,7 +234,7 @@ OBS.: Chaves não presentes no schema/no userSchema.omit serão removidas.
 ### Exemplo de Request:
 ```
 GET /users
-Host: http://suaapi.com/v1
+Host: http://localhost:3000/
 Authorization: Bearer token
 Content-type: application/json
 ```
@@ -306,12 +306,12 @@ Nenhum, o máximo que pode acontecer é retornar uma lista vazia.
 
 [ Voltar aos Endpoints ](#4-endpoints)
 
-### `/users/:user_id`
+### `/users/:id`
 
 ### Exemplo de Request:
 ```
 GET /users/1
-Host: http://suaapi.com/v1
+Host: http://localhost:3000/
 Authorization: Bearer Token
 Content-type: application/json
 ```
@@ -371,7 +371,7 @@ Vazio
 ### Exemplo de Request:
 ```
 PATCH /users/1
-Host: http://suaapi.com/v1
+Host: http://localhost:3000/
 Authorization: Bearer Token
 Content-type: application/json
 ```
@@ -434,7 +434,7 @@ Content-type: application/json
 ### Exemplo de Request:
 ```
 PATCH /users/1
-Host: http://suaapi.com/v1
+Host: http://localhost:3000/
 Authorization: Bearer Token
 Content-type: application/json
 ```
