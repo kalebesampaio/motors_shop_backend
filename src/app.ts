@@ -8,7 +8,10 @@ import {
   userRouter,
 } from "./routers";
 
+const cors = require("cors");
+
 const app: Application = express();
+app.use(cors());
 app.use(json());
 
 app.use("/users", userRouter);
